@@ -17,10 +17,12 @@ public class ObjectHeight {
 
 	public static void main(String[] args) {
 
-
+		//Inputting the time
 		Scanner sc =new Scanner(System.in);
 		System.out.println("Enter a time less that 4.5 seconds");
 		double objectTime=sc.nextDouble();
+		
+		//Calculating the object's height
 		double objectHeight=100-2.9*objectTime*objectTime;
 		System.out.println("The height of the object is: "+objectHeight+" metres.");
 		
