@@ -2,7 +2,7 @@ package miller.unit1;
 
 import java.util.Scanner;
 
-/**Digits.java
+/**ObjectHeight.java
  * This program outputs the digits of a number between 0 and 999
  * September 23, 2019
  * @author Ruby Miller
