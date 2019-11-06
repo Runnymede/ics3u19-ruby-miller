@@ -23,7 +23,7 @@ public class PrimeNumbersBonus {
 		System.out.println("Please enter a positive integer.");
 		int n1 = sc.nextInt(); // Acts as the counter
 		System.out.println("Please enter a posisive integer higher than the first one.");
-		int n2 = sc.nextInt(); // The limit of the loop
+		int n2 = sc.nextInt(); // Acts as the limit of the loop
 		int modulus;
 		int nSquareRoot = (int)Math.sqrt(n2);
 		
