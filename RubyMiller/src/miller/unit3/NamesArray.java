@@ -3,7 +3,16 @@ package miller.unit3;
 import java.util.Scanner;
 
 /**PowersTableBonus.java <p>
- * This program 
+ * This program gets input from the user. The user inputs the amount of names on a list, and then enters all of the names based on the amount inputed. <br>
+ * The list will first be printed out in the same order it was inputed, then in will be printed in the reverse order. <br>
+ * eg. if the user wants 3 names on the list, and enters them: "name1", "name2", and "name3" the output will be: <br>
+ * name1 <br>
+ * name2 <br>
+ * name3 <p>
+ * Reverse Order: <br>
+ * name3 <br>
+ * name2 <br>
+ * name1 <p>
  * November 22, 2019
  * @author Ruby Miller
  */
@@ -21,7 +30,7 @@ public class NamesArray {
 		System.out.println("How many names do you want on the list?");
 		int amount = sc.nextInt() + 1; //Add 1, because the index starts at 0, and the variable amount is used as a reference for the index
 		System.out.println("Input the " + amount + " names one at a time");
-		String [] names = new String[amount]; //Tyis array will hold all of the names entered. It will hold the inputed amount of names
+		String [] names = new String[amount]; //This array will hold all of the names entered. It will hold the inputed amount of names
 		
 		//Getting the names as input into an array
 		for (int i = 0; i < amount; i++)
