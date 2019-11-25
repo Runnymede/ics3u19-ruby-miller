@@ -41,10 +41,14 @@ public class PrimeNumbers {
 			}
 			counter = counter + 1;
 		}
-		if (nSquareRoot == 1) // Since the counter starts at 2, 1 is not included, but 1 is a prime number
+		if (n == 1 || n == 0) // Since the counter starts at 2, 1 is not included, but 1 is a prime number
 		{
-			primeNumber = " is a prime number!";
+			primeNumber = " is not a prime number!";
 		}
+		else if (n == 2)
+		{
+			primeNumber = " is a prime number"
+;		}
 		
 		// Outputting if the inputed number is a prime number or not
 		System.out.println(n + primeNumber);
