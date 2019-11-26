@@ -27,6 +27,7 @@ public class GuessGame {
 		
 		//Starting the game
 		System.out.println("Hi, lets play a guessing game! Think of a fruit, and I will guess, you answer yes or no.");
+		System.out.println();
 		
 		//Computer guessing, and user answering (yes/no)
 		do
