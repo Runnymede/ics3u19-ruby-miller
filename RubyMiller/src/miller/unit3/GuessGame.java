@@ -3,7 +3,8 @@ package miller.unit3;
 import java.util.Scanner;
 
 /**GuessGame.java <p>
- * This program 
+ * In this program, the user is asked to think of a fruit, and the computer will 'guess" by generating random numbers that coordinate with a fruit in the array. <br>
+ * The user will input if the computer's guess is correct, if the computer is correct, it will print "I win!!!". <p>
  * November 25, 2019
  * @author Ruby Miller
  */
@@ -16,7 +17,6 @@ public class GuessGame {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		//Declaring variables
 		String [] fruits = {"an orange", "an apple", "a strawbery", "a blueberry", "a grape", "a banana", "a pinapple", "a raspberry"};
