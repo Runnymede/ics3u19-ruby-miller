@@ -130,7 +130,6 @@ public class TicTacToe {
 				counter = counter + 1; //This adds 1 to the counter. the counter counts the amount of spaces filled (9 is the highest)
 			}
 		}
-
 		//Outputting if it was a tie when the board is full
 		if (win == 0) //If nobody won and the loop is finished, meaning the board is full, it is a tie
 			System.out.println("It was a tie.");
