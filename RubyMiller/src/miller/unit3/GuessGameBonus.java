@@ -47,7 +47,7 @@ public class GuessGameBonus {
 		} while (correct.equalsIgnoreCase("no") && counter < 8); //The computer will continue to guess until the user says yes
 
 		//Printing if the computer wins, or has guessed all of the fruits (gives up)
-		if (counter == 8 && correct.contentEquals("no")) { //If the computer has guessed all of the fruits, and they were all wrong, it gives up
+		if (counter == 8 && correct.contentEquals("no")) { //When the computer has guessed all of the fruits (when counter is 8), and they were all wrong, it gives up
 			System.out.println("I give up!");
 		}
 
