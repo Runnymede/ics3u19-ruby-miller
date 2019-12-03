@@ -40,7 +40,7 @@ public class TicTacToe {
 		System.out.println();
 
 		//Inputting placements of Xs and Os
-		while (win == 0){ //This loop will continue until somebody wins
+		while (win == 0 && counter < 9){ //This loop will continue until somebody wins, or if the board is full
 			xOrO = 'X';
 			player = 1;
 			d = 0;
@@ -129,6 +129,7 @@ public class TicTacToe {
 				player = 2; //This changes it from player 1's turn to player 2's turn
 				counter = counter + 1; //This adds 1 to the counter. the counter counts the amount of spaces filled (9 is the highest)
 			}
+			
 		}
 
 		//Outputting if it was a tie when the board is full
