@@ -131,7 +131,6 @@ public class TicTacToe {
 			}
 			
 		}
-
 		//Outputting if it was a tie when the board is full
 		if (win == 0) //If nobody won and the loop is finished, meaning the board is full, it is a tie
 			System.out.println("It was a tie.");
