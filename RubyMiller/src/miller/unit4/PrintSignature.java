@@ -3,6 +3,8 @@ package miller.unit4;
 /**PrintSignature.java <p>
  * This program prints ASCII art for Ruby and a picture of a computer. <br>
  * It does this using 32 methods: printSignature, printImage, and main, which prints both. <p>
+ * December 16, 2019
+ * @author Ruby Miller
  */
 
 public class PrintSignature {
