@@ -15,12 +15,10 @@ import java.util.Scanner;
  */
 
 public class IsoTriangle {
-	
 	/**
 	 * Entry point to this program
 	 * @param args unused
 	 */
-
 	
 	/**
 	 * This method calls the other two the correct amount of times using for-loops
@@ -40,7 +38,6 @@ public class IsoTriangle {
 			}
 			System.out.println(); //Going to the next line (enter), so all the stars don't apear on the same line
 		}
-
 	}
 	
 	/**
@@ -48,7 +45,6 @@ public class IsoTriangle {
 	*/
 	public static void drawSpaces(int n) {
 			System.out.print(" ");
-		
 	}
 	
 	/**
@@ -57,5 +53,4 @@ public class IsoTriangle {
 	public static void drawStars(int n) {
 			System.out.print("*");
 	}
-
 }
