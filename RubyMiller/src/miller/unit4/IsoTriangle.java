@@ -3,7 +3,7 @@ package miller.unit4;
 import java.util.Scanner;
 
 /**PrintSignature.java <p>
- * This program prints an isosolece triangle based on  a inputed amount of rows/levels. <br>
+ * This program prints an isosceles triangle based on  a inputed amount of rows/levels. <br>
  * eg. input: 3
  * output: <br>
  * (2 spaces) * <br>
