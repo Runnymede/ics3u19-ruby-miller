@@ -36,7 +36,7 @@ public class IsoTriangle {
 					drawStars(j); //Calling the drawStars method
 				}
 			}
-			System.out.println(); //Going to the next line (enter), so all the stars don't apear on the same line
+			System.out.println(); //Going to the next line (enter), so all the stars don't appear on the same line
 		}
 	}
 	
