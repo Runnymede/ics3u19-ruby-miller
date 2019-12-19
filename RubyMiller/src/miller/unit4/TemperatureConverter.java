@@ -8,7 +8,7 @@ import java.util.Scanner;
  * The inputted value will be used to convert the temperature in one of the other methods. <br>
  * Once the temperature is converted, it will be printed in the main method. <br>
  * The user will be asked if they want to convert another temperature, which will make a do-while loop repeat again, or stop. <p>
- * December 17, 2019
+ * December 18, 2019
  * @author Ruby Miller
  */
 
@@ -35,16 +35,17 @@ public class TemperatureConverter {
 				double celsius = sc.nextDouble();
 				System.out.println("The value of " + celsius + "°C in fahrenheit is " + (celsiusToFahrenheit(celsius)) + "°F");
 			}						//The CelsiusToFahrenheit method is called, using the celsius value the user entered as the parameter c2
+			System.out.println();
 			System.out.println("Do you want to convert another temperature?");
-			repeat = sc.nextLine(); //If the user wants to convert anothner temperature, they will enter "yes", making the do-while loop repeat
+			repeat = sc.next(); //If the user wants to convert anothner temperature, they will enter "yes", making the do-while loop repeat
 		} while (repeat.equalsIgnoreCase("yes"));
 	}
 
 	public static double fahrenheitToCelsius(double f2) {
-		return ((f2 - 32) * 5 / 9); //This takes the inputted 
+		return ((f2 - 32) * 5 / 9); //This takes the inputted number in fahrenheit and converts it to celsius
 	}
 
 	public static double celsiusToFahrenheit(double c2) {
-		return (c2 * 9 / 5 + 32);
+		return (c2 * 9 / 5 + 32); //This takes the inputed number in celsius and converts it to fahrenheit
 	}
 }
