@@ -3,7 +3,7 @@ package miller.unit4;
 import java.util.Scanner;
 
 /**PrintSignature.java <p>
- * This program asks te user if the want to convert from fahrenheit to celsius or from celsius to fahrenheit. <br>
+ * This program asks the user if the want to convert from fahrenheit to celsius or from celsius to fahrenheit. <br>
  * The user will then input the value in fahrenheit or celsius, then either the fahrenheitToCelcius or celsiusToFahrenheit method will be called. <br>
  * The inputted value will be used to convert the temperature in one of the other methods. <br>
  * Once the temperature is converted, it will be printed in the main method. <br>
