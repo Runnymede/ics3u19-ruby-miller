@@ -13,12 +13,11 @@ import java.util.Scanner;
  */
 
 public class TemperatureConverter {
-	
-	/**
-	 * Entry point to this program
-	 * @param args unused
-	 */
 
+	/**
+	 * This method allows the user to enter the tremperature, and prints all of the calculations <br>
+	 * @param args - the array of strings that stores arguments passed by the command line.
+	*/
 	public static void main(String[] args) {
 		String repeat; //Declaring the variable repeat, which determines if the user wants to convert another temperature
 
@@ -41,10 +40,20 @@ public class TemperatureConverter {
 		} while (repeat.equalsIgnoreCase("yes"));
 	}
 
+	/**
+	 * This method finds the temperature in celsius from the temperature in fahrenheit. <br>
+	 * @param f2 - the given number in fahrenheit. <br>
+	 * @return the temperature in celsius.
+	*/
 	public static double fahrenheitToCelsius(double f2) {
 		return ((f2 - 32) * 5 / 9); //This takes the inputted number in fahrenheit and converts it to celsius
 	}
 
+	/**
+	 * This method finds the temperature in fahrenheit from the temperature in celsius. <br>
+	 * @param c2 - the given number in celsius. <br>
+	 * @return the temperature in fahrenheit.
+	*/
 	public static double celsiusToFahrenheit(double c2) {
 		return (c2 * 9 / 5 + 32); //This takes the inputed number in celsius and converts it to fahrenheit
 	}

@@ -14,14 +14,10 @@ import java.util.Scanner;
  */
 
 public class MathPlus {
-	
-	/**
-	 * Entry point to this program
-	 * @param args unused
-	 */
 
 	/**
-	 * This method allows the user to enter the array, and prints all of the calculations
+	 * This method allows the user to enter the array, and prints all of the calculations. <br>
+	 * @param args - the array of strings that stores arguments passed by the command line.
 	*/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -39,7 +35,9 @@ public class MathPlus {
 	}
 
 	/**
-	 * This method returns the minimum number in the inputed array
+	 * This method finds the minimum number in the inputed array. <br>
+	 * @param numbers - the array of numbers that the program finds the minimum of. <br>
+	 * @return the smallest integer in the given array.
 	*/
 	public static int min(int[]numbers) {
 		int minNumber = Math.min(numbers[0], numbers[1]); //Finding the minimun of the first 2 numbers in the array
@@ -49,6 +47,11 @@ public class MathPlus {
 		return minNumber;
 	}
 
+	/**
+	 * This method finds the maximum number in the inputed array. <br>
+	 * @param numbers - the array of numbers that the program finds the maximum of. <br>
+	 * @return the largest integer in the given array.
+	*/
 	public static int max(int[]numbers) {
 		int maxNumber = Math.max(numbers[0], numbers[1]);
 		for (int i = 0; i < numbers.length; i++) {
@@ -56,7 +59,12 @@ public class MathPlus {
 		}
 		return maxNumber;
 	}
-
+	
+	/**
+	 * This method adds all of the numbers in the array together. <br>
+	 * @param numbers - the array of numbers that the program adds together. <br>
+	 * @return the sum of all the integers in the given array.
+	*/
 	public static int sum(int[]numbers) {
 		int sumNumbers = 0;
 		for (int i = 0; i < numbers.length; i++) {
@@ -64,7 +72,12 @@ public class MathPlus {
 		}
 		return sumNumbers;
 	}
-
+	
+	/**
+	 * This method finds the average of the array of integers. <br>
+	 * @param numbers - the array of numbers that the program afinds the average of. <br>
+	 * @return the average of all the integers in the given array.
+	*/
 	public static double average(int[]numbers) {
 		return (double)sum(numbers) / numbers.length;
 	}
