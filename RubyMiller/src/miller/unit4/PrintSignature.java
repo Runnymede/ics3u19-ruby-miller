@@ -9,14 +9,18 @@ package miller.unit4;
 
 public class PrintSignature {
 	
-	/**
-	 * Entry point to this program
-	 * @param args unused
-	 */
-
 	
 	/**
-	 * This method is the word Ruby in ASCII
+	 * This method calls the other 2 methods, and prints them both. <br>
+	 * @param args - the array of strings that stores arguments passed by the command line.
+	 */
+	public static void main(String[] args) {
+		printSignature(); //Calling the printSignature method
+		printImage(); //Calling the printImage method
+		
+	}
+	/**
+	 * This method prints the signature. 
 	*/
 	public static void printSignature() {
 		System.out.println(" _____       _           \r\n" + 
@@ -30,7 +34,7 @@ public class PrintSignature {
 	}
 
 	/**
-	 * This method is a picture of a computer in ASCII
+	 * This method prints a picture of a computer in ASCII
 	*/
 	public static void printImage() {
 		System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n" + 
@@ -139,13 +143,4 @@ public class PrintSignature {
 				"MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n" + 
 				"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc");
 	}
-	
-	/**
-	 * This method calls the other 2 methods, and print them both
-	 */
-	public static void main(String[] args) {
-		printSignature(); //Calling the printSignature method
-		printImage(); //Calling the printImage method
-	}
-	
 }

@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class TemperatureConverter {
 
 	/**
-	 * This method allows the user to enter the tremperature, and prints all of the calculations <br>
+	 * This method allows the user to enter the tremperature, and prints all of the calculations. <br>
 	 * @param args - the array of strings that stores arguments passed by the command line.
 	*/
 	public static void main(String[] args) {
