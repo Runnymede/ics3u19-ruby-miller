@@ -45,6 +45,8 @@ public class MathPlus {
 		System.out.println("The largest number is " + max(userDoubles));
 		System.out.println("The sum of all the numbers is " + sum(userDoubles));
 		System.out.println("The average of all the numbers is " + average(userDoubles));
+		System.out.println("the median of the array is " + median(userDoubles));
+		System.out.println("The mode of the array is " + mode(userDoubles));
 	}
 
 	/**
@@ -135,12 +137,66 @@ public class MathPlus {
 	}
 	
 	/**
-	 * This method finds the average of the array of integers. <br>
-	 * @param numbers - the array of numbers that the program afinds the average of. <br>
+	 * This method finds the average of the array. <br>
+	 * @param numbers - the array of numbers that the program finds the average of. <br>
 	 * @return the average of all the numbers (doubles) in the given array.
 	*/
 	public static double average(double[]numbers) {
 		return sum(numbers) / numbers.length;
+	}
+	
+	/**
+	 * This method finds the median of the array. <br>
+	 * @param numbers - the array of numbers that the program finds the median of. <br>
+	 * @return the median of all the numbers (doubles) in the given array.
+	*/
+	public static double median(double[]numbers) {
+		if (numbers.length % 2 == 0) {
+			return (numbers[numbers.length / 2] + numbers[(numbers.length / 2) + 1] ) / 2;
+		}
+		return numbers[numbers.length / 2];
+	}
+
+	/**
+	 * This method finds the mode of the array. <br>
+	 * @param numbers - the array of numbers that the program finds the mode of. <br>
+	 * @return the mode of all the numbers (doubles) in the given array.
+	*/
+	public static double mode(double[]numbers) {
+		int counter2 = 0;
+		double mode = numbers[0];
+		for (int i = 0; i < numbers.length; i++) {
+			double value = numbers[i];
+			int counter = 1;
+			for (int j = 0; j < numbers.length; j++) {
+				if (numbers[j] == value) {
+					counter++;
+					if (counter > counter2) {
+						mode =  value;
+						counter2 = counter;
+					}
+				}
+
+			}
+
+		}
+		return mode;
+	}
+
+	public static boolean prime(int[]numbers) {
+		int counter = 0;
+		for (int i = 0; i < numbers.length; i++) {
+			while (counter < Math.sqrt(numbers[i])) {
+				if (i % counter != 0) {
+					return true;
+				}
+				else {
+					return false;
+					break;
+				}
+				counter++;
+			}
+		}
 	}
 }
 
