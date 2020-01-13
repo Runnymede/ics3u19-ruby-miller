@@ -209,16 +209,16 @@ public class MathPlus {
 	 */
 	public static boolean prime(int number) { 
 		int counter = 1;                      
-		while (counter < Math.sqrt(number)) {
+		while (counter < Math.sqrt(number)) { //The loop repeats when the counter is less than the square root of the given number.
 			counter++;
-			if (number == 1 || number == 0){ // Since the counter starts at 2, 1 is not included, but 1 is a prime number
+			if (number == 1 || number == 0){ //Since the counter starts at 2, 1 is not included, but 1 is a prime number
 				return false;
 			}
-			else if ((number == 2) || (number % counter != 0)){
+			else if ((number == 2) || (number % counter != 0)){  //If the number is 2 or if it can't be divided by the counter, it will return true.
 				return true;
 			}
 			else {
-				break;
+				break; //If the number can be divided by the counter, it will breaak, since that number is defenitely not a prime number.
 			}
 		}
 		return false;
@@ -231,8 +231,8 @@ public class MathPlus {
 	 */
 	public static long factorial(int number) {
 		int sum = 1;
-		for (int i = 1; i <= number; i++) {
-			sum = sum * i;
+		for (int i = 1; i <= number; i++) { //The loop will continue until the counter (i) becomes greater than the given number.
+			sum = sum * i; //The variable sum acts as an accumulator, so it will continue to multiply it's previous value to the new value.
 		}
 		return sum;
 	}
@@ -244,8 +244,8 @@ public class MathPlus {
 	 */
 	public static int numOfFactors(int number) {
 		int counter = 0;
-		for (int i = 1; i <= number; i++) {
-			if (number % i == 0) {
+		for (int i = 1; i <= number; i++) { //The loop will continue until the counter (i) becomes greater then the given number.
+			if (number % i == 0) { //If the number can be divided by i, 1 will be added to the counter, accumulating all of the number's factors.
 				counter++;
 			}
 		}
@@ -259,13 +259,13 @@ public class MathPlus {
 	 * @return an array that includes all of the factors the given number has.
 	 */
 	public static int[] factors(int number) {          
-		int[] factors = new int[numOfFactors(number)]; 
+		int[] factors = new int[numOfFactors(number)];  //This array will store all of the given number's factors, it calls the numOfFactors method to find the length of the new array.
 		int counter = 0;
-		for (int i = 1; i <= number; i++) {
-			int factor = number / i;
-			if (number % i == 0) {
-				factors[counter] = factor;
-				counter++;
+		for (int i = 1; i <= number; i++) { //This loop will continue until i is greater than the given number.
+			int factor = number / i; //The value for the variable factor is calculated by dividnig the given number by the counter (i).
+			if (number % i == 0) { //If the number % the counter is exactly 0, it means that the counter at this point is one of the number's factors.
+				factors[counter] = factor; //If the counter is oe of the number's factors, the factor will be stored in the array.
+				counter++; //The counter counts the amount of factors the number has.
 			}
 		}
 		return factors;
